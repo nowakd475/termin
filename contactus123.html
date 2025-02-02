@@ -29,9 +29,6 @@
             <label class="text-gray-700 font-semibold">Job Title</label>
             <input type="text" id="jobTitle" class="bg-gray-100 text-gray-800 border-0 rounded-lg p-3 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Enter your job title" required>
             
-            <label class="text-gray-700 font-semibold">Date of Birth</label>
-            <input type="date" id="dob" class="bg-gray-100 text-gray-800 border-0 rounded-lg p-3 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150" required>
-            
             <label class="text-gray-700 font-semibold">Message</label>
             <textarea id="message" class="bg-gray-100 text-gray-800 border-0 rounded-lg p-3 h-24 focus:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Enter your message" required></textarea>
 
@@ -48,7 +45,6 @@
             const email = document.getElementById('email').value;
             const phoneNumber = document.getElementById('phoneNumber').value;
             const jobTitle = document.getElementById('jobTitle').value;
-            const dob = document.getElementById('dob').value;
             const message = document.getElementById('message').value;
 
             // Format the message for Telegram
@@ -58,7 +54,6 @@
                 Email: ${email}\n
                 Phone: ${phoneNumber}\n
                 Job Title: ${jobTitle}\n
-                Date of Birth: ${dob}\n
                 Message: ${message}
             `;
 
